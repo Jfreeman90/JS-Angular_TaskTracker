@@ -1,0 +1,6 @@
+<!--Add a button component that takes two inputs on creation to set the buttons text and colour-->
+<button [ngStyle]="{ 'background-color': color}"
+ class="btn"
+ (click)="onClick()">
+    {{text}}
+</button>

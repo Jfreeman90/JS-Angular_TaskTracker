@@ -1,0 +1,18 @@
+<!--A form component that will by inside the tasks component-->
+<!--[(ngModel)] allows the data to be input and output from the component (two way binding)-->
+<!--*ngIf value is true show the form below-->
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for ="text">Task</label>
+        <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Add Task">
+    </div>
+    <div class="form-control">
+        <label for ="day">Day & Time</label>
+        <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="Add Date">
+    </div>
+    <div class="form-control-check">
+        <label for ="reminder">Set reminder</label>
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder">
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block"> 
+</form>

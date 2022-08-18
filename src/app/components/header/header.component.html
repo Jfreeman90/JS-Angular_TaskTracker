@@ -1,0 +1,9 @@
+<header>
+    <h1>{{title}}</h1>
+    <!--Embedd the button component into the header component here-->
+    <!--use ? to do a variable if else and return values depending on it-->
+    <app-button *ngIf="hasRoute('/')"
+    color="{{ showAddTask ? 'red' : 'green' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="toggleAddTask()"></app-button>
+</header>
