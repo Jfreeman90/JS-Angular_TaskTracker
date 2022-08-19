@@ -1,0 +1,4 @@
+-Run the webserver in CL: ng serve --open
+-Run the fake backend DB: npm run server
+
+-creating component: ng generate component components/[component name] --module=app.module
